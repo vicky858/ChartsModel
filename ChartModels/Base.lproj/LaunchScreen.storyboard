@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,54 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dimensions-BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="foH-ge-KBy">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATA VISUALIZATION MODELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhV-s3-KcD">
+                                <rect key="frame" x="157" y="289" width="895" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="OzW-Vt-XS2"/>
+                                    <constraint firstAttribute="width" constant="895" id="Rnv-gF-XkW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" red="0.033974358974358965" green="0.0055041739306887797" blue="0.028406539167823937" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AND GFRAPHS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvW-Q8-NML">
+                                <rect key="frame" x="568" y="352" width="237" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="Ba7-j8-xh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" red="0.03397435897" green="0.0055041739310000004" blue="0.028406539170000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kvW-Q8-NML" firstAttribute="top" secondItem="lhV-s3-KcD" secondAttribute="bottom" constant="-17" id="1A9-c1-rrw"/>
+                            <constraint firstItem="foH-ge-KBy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3x6-Gh-i1i"/>
+                            <constraint firstItem="foH-ge-KBy" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Jqv-gr-grI"/>
+                            <constraint firstItem="foH-ge-KBy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OAU-pf-QH3"/>
+                            <constraint firstItem="kvW-Q8-NML" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="568" id="bNz-CQ-hXv"/>
+                            <constraint firstAttribute="trailing" secondItem="foH-ge-KBy" secondAttribute="trailing" id="eHh-YH-8F6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lhV-s3-KcD" secondAttribute="trailing" constant="-48" id="hyU-Yk-MvI"/>
+                            <constraint firstItem="lhV-s3-KcD" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="wAr-rA-Vc5"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kvW-Q8-NML" secondAttribute="bottom" constant="328" id="xyY-a0-ZYl"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dimensions-BG.jpg" width="1600" height="599"/>
+    </resources>
 </document>
